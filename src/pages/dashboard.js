@@ -121,6 +121,14 @@ export default function Dashboard() {
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
       <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
+      <button
+        onClick={() => {
+          router.push("/addMany");
+        }}
+        className="mb-4 bg-blue-500 text-white px-4 py-2 rounded mx-1"
+      >
+        Toplu Kullanıcı Ekle
+      </button>
       {successMessage && (
         <p className="text-green-500 mb-4">{successMessage}</p>
       )}
